@@ -1,4 +1,8 @@
+
+
 function upDate(previewPic){
+    var img=document.getElementById('image');
+    var imgtext=document.getElementById('imgtext');
  /* In this function you should 
     1) change the url for the background image of the div with the id = "image" 
     to the source file of the preview image
@@ -6,8 +10,14 @@ function upDate(previewPic){
     2) Change the text  of the div with the id = "image" 
     to the alt text of the preview image 
     */
-  
-	}
+
+    
+    img.src = previewPic.src;
+  imgtext.innerHTML = previewPic.alt;
+  img.parentElement.style.display = "block";
+
+  }
+	
 
 	function unDo(){
      /* In this function you should 
@@ -17,5 +27,7 @@ function upDate(previewPic){
     2) Change the text  of the div with the id = "image" 
     back to the original text.  You can use the html code to see what that original text was
     */
-		
+   location.replace("gallery.html");
+
+
 	}
