@@ -3,14 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="css/gallery.css">
-	<script src = "js/gallery.js"></script>
+	<link rel="stylesheet" href="gallery.css">
+	<script src = "gallery.js"></script>
 </head>
 <body>
 	
-	<div id = "image">
+	<div >
 		Hover over an image below to display here.
+		<img id="image">
 	</div>
+	<div id="imgtext"></div>
 	
 	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
 	
